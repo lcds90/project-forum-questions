@@ -94,8 +94,8 @@ APP.post("/responder", (req, res) => {
   });
 });
 
-APP.listen(8080, () => {
+APP.listen(process.env.PORT || 8000, () => {
   setTimeout(() => {
-    console.log("App rodando em http://localhost:8080");
+    console.log("App rodando");
   }, 500);
 });
