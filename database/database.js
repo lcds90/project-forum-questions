@@ -3,9 +3,6 @@ const SEQUELIZE = require("sequelize");
 const CONN = new SEQUELIZE(process.env.DATABASE_URL, {
   dialect: "postgres",
   protocol: 'postgres',
-  dialectOptions: {
-      ssl: true
-  }
 });
 
 module.exports = CONN;
