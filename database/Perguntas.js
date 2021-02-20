@@ -13,6 +13,6 @@ const Pergunta = CONN.define("pergunta", {
   },
 });
 
-// Pergunta.sync({ force: false }).then(() => {});
+Pergunta.sync({ force: false }).then(() => {});
 
 module.exports = Pergunta;
