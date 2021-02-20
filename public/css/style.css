@@ -1,0 +1,37 @@
+body {
+    background-color:rgb(255, 160, 255)
+}
+
+/*vh é porcentagem da altura da tela, o exemplo é 5% da altura da tela e vw é referente a largura */
+#form_pergunta {
+    margin-top: 10vh
+}
+
+.navbar img {
+    margin-left:10vw;
+}
+
+.title {
+    text-shadow: 2px 2px #ff009d;
+}
+
+.desc {
+    border-bottom: 2px solid #ff009d;
+}
+
+.form-control {
+    color:rgb(68, 68, 68);
+    background-color: rgb(230, 230, 230);
+    transition:1s ease-in-out;
+}
+
+.form-control:focus {
+    color:white;
+    border-color: #ff009d;
+    background-color: rgb(122, 122, 122);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 65, 138, 0.6);
+  }
+
+  .form-control::placeholder {
+    color: rgb(230, 230, 230);
+  }
