@@ -8,12 +8,16 @@ const SEQUELIZE = require("sequelize");
 if (process.env.DATABASE_URL) {
   // the application is executed on Heroku ... use the postgres database
   const CONN = new SEQUELIZE(process.env.DATABASE_URL, {
-    dialect:  'postgres',
-    protocol: 'postgres'
-  })
+    dialect: "postgres",
+    protocol: "postgres",
+    dialectOptions: {
+      ssl: {
+        rejectUnauthorized: false,
+      },
+    },
+  });
 
-  module.exports = CONN
+  module.exports = CONN;
 }
-
 
 // module.exports = CONN;
