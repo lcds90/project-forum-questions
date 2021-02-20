@@ -11,7 +11,9 @@ if (process.env.DATABASE_URL) {
     dialect:  'postgres',
     protocol: 'postgres'
   })
+
+  module.exports = CONN
 }
 
 
-module.exports = CONN;
+// module.exports = CONN;
